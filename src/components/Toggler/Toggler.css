@@ -1,0 +1,16 @@
+
+
+.toggler-btn {
+    height: 100%;
+    width: 50%;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.active {
+    background-color: #39585a;
+}

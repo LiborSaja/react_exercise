@@ -1,38 +1,32 @@
-.App {
-  text-align: center;
+
+.parag-form{
+    color: aliceblue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #222831;  /* Nastavíme barvu pozadí */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-cont {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;  /* Nastavení celé výšky obrazovky */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.toggler-cont {
+    flex-shrink: 0;  /* Ujistí se, že Toggler nezmění velikost */
+    padding: 20px;  /* Volitelně: přidáme padding okolo Toggler */
+    background-color: #222831;  /* Ujistíme se, že barva pozadí sedí */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content-cont {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;   Zarovnání do středu vertikálně */
+    /*align-items: center;   Zarovnání do středu horizontálně */
+    background-color: #222831;
 }

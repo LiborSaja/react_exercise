@@ -1,0 +1,38 @@
+.container {
+    padding-top: 20px;
+    background-color: #222831;
+}
+
+.list {
+    max-width: 800px;
+}
+
+.item {
+    background-color: #00adb5;
+    color: white;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Pseudo-třída pro každou sudou položku */
+.item:nth-child(even) {
+    background-color: #eeeeee;
+    color: black;
+}
+
+.item-text {
+    text-align: left;
+    flex-grow: 1; /* Umožní textu zabrat maximum místa */
+}
+
+.delete-button {
+    padding: 4px 8px;
+    font-size: 12px;
+    width: auto;
+    flex-shrink: 0; /* Zabraňuje tlačítku zmenšit se */
+}
